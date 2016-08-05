@@ -14,7 +14,7 @@ Fetches weather info from api.forecast.io
 	
 	pip install -r requirements.txt
 
-* copy files with keys (request from Ignacio) into yoyoweather module path:
+* copy files with keys (request from Ignacio) into yoyoweather module path (i.e. same directory as the settings.py file):
 
         cp <somepath>/secret.py yoyoweather/secret.py
 
