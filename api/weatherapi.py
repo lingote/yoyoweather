@@ -71,14 +71,14 @@ class WeatherApi(object):
             temps[i] = res[0]
             humis[i] = res[1]
         res = {
-            'Temp. Min': np.min(temps),
-            'Temp. Max': np.max(temps),
-            'Temp. Avg.': np.average(temps),
-            'Temp. Median': np.median(temps),
-            'Humidity Min': np.min(humis),
-            'Humidity Max': np.max(humis),
-            'Humidity Avg.': np.average(humis),
-            'Humidity Median': np.median(humis)
+            'Temp. Min': str(np.min(temps)) +' deg. Celsius',
+            'Temp. Max': str(np.max(temps)) + ' deg. Celsius',
+            'Temp. Avg.': str(np.average(temps)) + ' deg. Celsius',
+            'Temp. Median': str(np.median(temps)) + ' deg. Celsius',
+            'Humidity Min': str(np.min(humis)) + '%',
+            'Humidity Max': str(np.max(humis)) + '%',
+            'Humidity Avg.': str(np.average(humis)) + '%',
+            'Humidity Median': str(np.median(humis)) + '%'
         }
         return res
 
