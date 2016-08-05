@@ -1,6 +1,7 @@
 # Description
 
-Django API to get min, max, average and median temperature and humidity for given city and period of time
+Django API to get min, max, average and median temperature and humidity for given city and period of time.
+Fetches weather info from api.forecast.io
 
 
 # Installation
