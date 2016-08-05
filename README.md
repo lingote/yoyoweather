@@ -14,13 +14,17 @@ Fetches weather info from api.forecast.io
 	
 	pip install -r requirements.txt
 
+* copy files with keys (request from Ignacio) into yoyoweather module path:
+
+        cp <somepath>/secret.py yoyoweather/secret.py
 
 * Run web app locally:
 
-	python manage.py migrate
-	python manage.py runserver 
+	python manage.py migrate  
+
+	python manage.py runserver  
 
 * Example:
 
-	From web browser: http://127.0.0.1:8000/weatherapi/?city=London&from_date=2016-05-01 4:00&to_date=2016-05-02 18:00
+	From web browser: http://127.0.0.1:8000/weatherapi/?city=London&from_date=2016-05-01 4:00&to_date=2016-05-02 18:00  
 	From command line: curl -v -L "http://127.0.0.1:8000/weatherapi/?city=London&from_date=2016-05-01%204:00&to_date=2016-05-02%2018:00"
